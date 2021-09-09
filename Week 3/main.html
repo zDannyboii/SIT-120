@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="./js/vue.js"></script>
+        <script src="./main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Week 3 Tasks</title>
+    </head>
+    <body>
+        <div class="task1-cointaner">
+            <form >
+                <h1>TASK 1</h1>
+                <label>Type in a word:</label>
+                <input type="text" id="task1-input">
+                <br/>
+                <br/>
+                <label>Total Length</label>
+                <input type="text" id="length">
+                <br/>
+                <br/>
+                <label>Upper Case</label>
+                <input type="text" id="upper-case">
+                <br/>
+                <br/>
+                <label>Lower Case</label>
+                <input type="text" id="lower-case">
+                <button type="button" onclick="string_methods()">Activate Methods</button>
+            </form>
+        </div>
+        <div class="task2-cointaner">
+            <form >
+                <h1>TASK 2</h1>
+                <h2>Number Methods</h2>
+                <label>Type in a number:</label>
+                <input type="number" id="task2-input">
+                <br/>
+                <br/>
+                <label>Change to exponential</label>
+                <input  id="to-exponential">
+                <br/>
+                <br/>
+                <label>Change to 3 unit of float</label>
+                <input type="text" id="to-fix">
+                <br/>
+                <br/>
+                <label>Round up the number</label>
+                <input type="text" id="precision">
+                <button type="button" onclick="number_methods()">Activate Methods</button>
+            </form>
+                <h2>Array Method</h2>
+                <label>Enter 4 names:</label>
+                <input type="text" id="task2-input2">
+                <input type="text" id="task2-input3">
+                <input type="text" id="task2-input4">
+                <input type="text" id="task2-input5">
+                <br/>
+                <br/>
+                <label>Print Array</label>
+                <input type="text" id="print-array">
+                <button type="button" onclick="print_array()">Activate Methods</button>
+            <form>
+            </form>
+        </div>
+        <div class="task3-cointaner">
+            <form >
+                <h1>TASK 3</h1>
+                <h2>Get Method</h2>
+                <button type="button" onclick="get_date()">Todays Date</button>
+                <br/>
+                <br/>
+                <label>Current Year</label>
+                <input type="text" id="year">
+                <br/>
+                <br/>
+                <label>Current Month</label>
+                <input type="text" id="month">
+                <br/>
+                <br/>
+                <label>Current Day</label>
+                <input type="text" id="day">     
+            </form>
+            <form>
+                <h2>Set Method</h2>
+                <label>Set Year:</label>
+                <input type="number" id="set-year"  min="1" step="1">
+                <label>Set Month:</label>
+                <input type="number" id="set-month" min="1" max="12" step="1">
+                <label>Set Day:</label>
+                <input type="number" id="set-day" min="1" max="31" step="1">
+                <br/>
+                <br/>
+                <label>New Date</label>
+                <input type="text" id="new-date">
+                <button type="button" onclick="set_date()">Set Date</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="./js/vue.js"></script>
+        <script src="./app.js"></script>
+
+        <title>Unit Score Calculator</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Unit Score Calculator Tool</h1>
+        </div>
+        <h2>Task 1 - 3 </h2>
+        <!-- Form Container -->
+        <div class="form-container" id="form-container">
+            <form>
+                <!-- Left Column of form -->
+                <div class="left-column">
+                    <h1>Student Information</h1>
+                    <p1>
+                        Please fill in the student Information below <br/>
+                        *This column is required <br/>
+                    </p1>
+                    <br/>
+                    <br/>
+                    <label>Course Unit: </label>
+                        <select >
+                            <option value="SIT102">SIT102</option>
+                            <option value="MIS201">MIS201</option>
+                            <option value="SIT103">SIT103</option>
+                            <option value="SIT120">SIT120</option>
+                        </select>
+                        <br/>
+                        <br/>
+                    <label>First Name: </label>
+                    <input type="text" placeholder="e.g: Danny">
+                    <br/>
+                    <br/>
+                    <label>Last Name: </label>
+                    <input type="text" placeholder="e.g: Phan">
+                    <br/>
+                    <br/>
+                    <label>Student ID: </label>
+                    <input type="number" placeholder="e.g: 221278919">
+                    <br/>
+                    <br/>
+                </div>
+                <!-- Right Column of form -->
+                <div class="right-column">
+                    <h1>Student Score</h1>
+                    <p1>
+                        Please fill in the percentage score <br/>
+                        *Fill in without the "%" <br/>
+                    </p1>
+                    <br/>
+                    <br/>
+                    <label>A1: </label>
+                    <input type="number" placeholder="e.g: 50" min="0" max="100" id="result1">
+                    <br/>
+                    <br/>
+                    <label>A2: </label>
+                    <input type="number" placeholder="e.g 60" min="0" max="100" id="result2">
+                    <br/>
+                    <br/>
+                    <label>A3: </label>
+                    <input type="number" placeholder="e.g: 30" min="0" max="100" id="result3">
+                    <br/>
+                    <br/>
+                </div>
+                <!-- Function buttons -->
+                <div class="function-button">
+                    <button type="reset">Reset</button>
+                    <button type="button" onclick="average_score()" && onclick="list_score()">Calculate</button>
+                </div>
+                <!-- Result container -->
+                </div class="result-container">
+                    <h1>Score Caculations</h1>
+                    <br/>
+                    <label>Your Scores:</label>
+                    <input id="list_result">
+                    <label>Average Score: </label>
+                    <input id="average_result">               
+                </div>
+            </form>
+        </div >
+    </body>
+</html>

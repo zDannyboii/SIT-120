@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="./app.js"></script>
+        <title>Week 5 Tasks</title>
+    </head>
+    <body>
+        <h1>Task 1-3</h1>
+        <div class="main-cointainer" id="main-cointainer">
+            <div class="game1-cointainer">
+                <h3>How many times can you click the button</h3>
+                <game_1 v-bind:player_name = "name"></game_1>
+            </div>
+
+            <div class="game2-cointainer">
+                <h3>Change the counter with different step option</h3>
+                <label>Counter: </label>
+                <button>{{counter}}</button>
+                <br/>
+                <br/>
+                <button v-on:click="increase_1">+1</button>
+                <button v-on:click="decrease_1">-1</button>
+            </div>
+        </div>
+        <script>
+            const mountedApp = app.mount('#main-cointainer')
+        </script>
+    </body>
+</html>

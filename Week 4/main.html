@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week 4 Tasks</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="./app.js"></script>
+    </head>
+    <body>
+        <h1>Task 1-2</h1>
+        <div  class="overall-contianer" id="overall-contianer">
+            <button v-on:click="toggle = !toggle">Toggle</button>
+            <div class="valid-password-container" v-if="toggle">
+                <h1>ON</h1>
+                <label>These are all the names in the array:</label>
+                <div>
+                    <ol>
+                      <li v-for="names in names">
+                        {{ names }}
+                      </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="wrong-password-contianer" v-else>
+                <h1>OFF</h1>
+                <span>This function is currently in off mode.<br/></span>
+                <span>Press "Toggle" to show content.</span>
+            </div>
+        </div>
+        <script>
+            const mountedApp = app.mount('#overall-contianer')
+        </script>
+    </body>
+</html>
